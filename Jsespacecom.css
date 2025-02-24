@@ -1,0 +1,111 @@
+/* Appliquer une mise en page globale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.séparation{
+border:0;
+border-top: 1px solid #000;
+margin:10px;
+width: auto;
+max-width: fit-content;
+}
+
+.gras{
+font-weight:bold;
+}
+
+.alignement{
+  font-weight:bold;
+  display: flex;
+justify-content: space-between;
+}
+.espace{
+  font-weight: 100;
+}
+/* Conteneur principal centré */
+.container {
+  width: 80%;
+  max-width: fit-content;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Titre centré */
+h2, h3 {
+  text-align: center;
+}
+
+/* Styliser le formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Aligner Nom et Prénom sur la même ligne */
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Espacement entre les champs */
+}
+
+/* Ajuster la largeur des champs */
+.input-field {
+  flex: 1; /* Les deux champs prennent un espace égal */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Assurer que la section commentaire prend toute la largeur */
+.full-width {
+  width: 100%;
+}
+
+/* Styliser les champs de saisie */
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styliser le bouton */
+button {
+  padding: 10px;
+  background-color: #00ff08;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #89ff7e;
+}
+
+/* Section des commentaires */
+#commentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Style des commentaires */
+.comment {
+  background: #e9ecef;
+ padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  word-wrap: break-word;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
